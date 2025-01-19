@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sri Akash</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#experience">Experience</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sri Akash</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li> 
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="profile pic.png" alt="Sri Akash's Profile Picture"> 
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sri Akash</h1>
+            <p class="section__text__p2">A CSE undergraduate</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+              <img src="linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sriakash4325/'">
+              <img <img src="mail.png" alt="My mail id" class="icon" onclick="location.href='mailto:sriakashsenthilmurugan@gmail.com'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="about.png" alt="Profile picture" class="about-pic"> 
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                      <h3>Education</h3>
+                      <p>Saratha matriculation higher secondary school - Class 12 - April 2023<br/>SRM University Ramapuram - BTech CSE Cyber security - May 2027</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I'm a Computer Science Engineering student at SRM Institute of Science and Technology, Ramapuram.I actively contribute to the Eleet Club as a Media and Content member and engage with the non-technical Camogenics Club.Alongside these roles, I am currently expanding my knowledge in cybersecurity and front-end development. My diverse involvement allows me to blend technical learning with creative pursuits, fueling my passion for innovation and design.</p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#skills'">
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="experience-details-container">
+      <div class="about-containers">
+          <div class="details-container">
+              <h2 class="experience-sub-title">Technical Skills</h2>
+              <div class="article-container" style="display: grid; grid-template-columns: repeat(4, 1fr); justify-items: center; gap: 20px;">
+                  <!-- First Row -->
+                  <article style="text-align: center; width: 120px;">
+                      <img src="html.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">HTML</h3>
+                          <p style="font-size: 16px; color: gray;">Intermediate</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="css.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">CSS</h3>
+                          <p style="font-size: 16px; color: gray;">Basic</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="javascript.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">JavaScript</h3>
+                          <p style="font-size: 16px; color: gray;">Basic</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="python.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">Python</h3>
+                          <p style="font-size: 16px; color: gray;">Intermediate</p>
+                      </div>
+                  </article>
+                  <!-- Second Row -->
+                  <article style="text-align: center; width: 120px;">
+                      <img src="clogo.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">C</h3>
+                          <p style="font-size: 16px; color: gray;">Basic</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="c++.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">C++</h3>
+                          <p style="font-size: 16px; color: gray;">Intermediate</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="java.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">Java</h3>
+                          <p style="font-size: 16px; color: gray;">Basic</p>
+                      </div>
+                  </article>
+                  <article style="text-align: center; width: 120px;">
+                      <img src="figma.png" alt="Skills icon" class="icon" style="width: 50px; height: 50px;" />
+                      <div>
+                          <h3 style="font-size: 18px;">Figma</h3>
+                          <p style="font-size: 16px; color: gray;">Basic</p>
+                      </div>
+                  </article>
+              </div>
+          </div>
+      </div>
+  </div>
+  <img src="arrow.png" alt="Arrow icon" class="icon arrow" style="margin-top: 20px;" onclick="location.href='#experience'">
+</section>
+
+      <!-- Experience Section (Moved after Skills) -->
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px; padding-top: 50px;">
+                        <img src="cog.png" alt="Camogenics Logo" width="100" style="margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <h3 style="margin: 0;">Camogenics</h3>
+                            <p>Admin team member</p>
+                            <p>September 2023 - Present</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;">
+                        <img src="eleet.png" alt="Eleet Logo" width="100" style="margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <h3 style="margin: 0;">Eleet</h3>
+                            <p>Media and Content member.</p>
+                            <p>October 2024 - Present</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10px; padding-bottom: 50px;">
+                        <img src="dsc.png" alt="DSC Logo" width="100" style="margin-bottom: 20px;">
+                        <div style="text-align: center;">
+                            <h3 style="margin: 0;">Developer Students Club</h3>
+                            <p>Operations team member.</p>
+                            <p>October 2024 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+      </section>
+      
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="mail.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:sriakashsenthilmurugan@gmail.com">sriakashsenthilmurugan@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/sriakash4325/">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li> <!-- Updated Link -->
+                    <li><a href="#experience">Experience</a></li> 
+                    <li><a href="#contact">Contact</a></li>
